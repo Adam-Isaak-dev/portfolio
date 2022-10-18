@@ -1,18 +1,13 @@
-import Head from 'next/head'
+import PageHeader from "../components/PageHeader";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Adam Isaak</title>
-        <meta name="description" content="A personal portfolio site" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <PageHeader title="Home" description="my personal portfolio website"/>
       <main>
-        
+        <div className="h-full h-screen bg-slate-900">
+        </div>
       </main>
-
       <footer>
       </footer>
     </div>
