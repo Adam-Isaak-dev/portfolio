@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/share-tech-mono": "^4.5.9",
     "@fontsource/vt323": "^4.5.10",
     "@mdx-js/loader": "^2.1.5",
     "@mdx-js/react": "^2.1.5",

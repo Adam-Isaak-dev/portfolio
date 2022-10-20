@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        logo: ['VT323','monospace']
+        logo: ['Share\\Tech\\Mono','monospace']
       },
     },
   },

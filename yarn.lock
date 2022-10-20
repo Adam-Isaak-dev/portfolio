@@ -32,6 +32,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/share-tech-mono@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/share-tech-mono/-/share-tech-mono-4.5.9.tgz#199f0b99716e6e374ecfa0f069717a19307fbad7"
+  integrity sha512-QssoS5JlMHibdbFYlODNDXcZNNcaUFEzJmqP8WcAXwPFUncY1ySwIySMm8Oa5QbZSb0904ZORrKhmdcuMSIjDw==
+
 "@fontsource/vt323@^4.5.10":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@fontsource/vt323/-/vt323-4.5.10.tgz#133e5c7a1878e3d1fb46b5e8ce6a2f85c7f9fb38"
