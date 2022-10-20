@@ -11,12 +11,12 @@ export default function NavBar(props) {
   const navItemWidth = `w-1/${navigation.length}`;
 
   return (
-    <nav className="bg-gray-900 text-white">
+    <nav className="text-white">
        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0 lg:py-2">
         <div className="sm:h-16 h-12 relative flex flex-col md:flex-row items-center justify-between">
           <div className="">
             <Link href="/">
-              <div className="cursor-pointer md:pb-2 sm:pb-1">
+              <div className="cursor-pointer md:pb-2 sm:pb-1 hover:text-cyan-200 hover:border-b-4 border-cyan-500">
                 <span className="lg:text-5xl md:text-4xl sm:text-4xl text-2xl font-logo">	&gt;_&nbsp;Adam_Isaak&nbsp;-dev</span>
               </div>
             </Link>
