@@ -9,19 +9,19 @@ export default function HeroSection(props) {
               <span className="block xl:inline">Greetings, I'm </span>
               <span className="block text-cyan-300 xl:inline">Adam</span>
             </h1>
-            <h2 className="mt-3 text-2xl text-gray-300">
+            <p className="mt-3 text-2xl text-gray-300">
               <span>&lt;&nbsp;Full&nbsp;Stack&nbsp;Developer&nbsp;&gt;</span>
-            </h2>
+            </p>
             <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl">
               Always willing to learn something new and figure out what makes something tick.
             </p>
-            <div className="mt-5 sm:mt-8 flex justify-center">
+            <div className="mt-5 sm:mt-8 flex justify-center items-center flex-col sm:flex-row  sm:space-y-0 space-y-3 sm:space-x-3 space-x-0">
               <div className="rounded-md shadow">
                 <Link href="/">
                   <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-8 py-3 text-base font-medium text-white hover:bg-cyan-700 md:py-4 md:px-10 md:text-lg">Projects</button>
                 </Link>
               </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
+              <div>
                 <Link href="/">
                   <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-100 px-8 py-3 text-base font-medium text-cyan-700 hover:bg-cyan-200 md:py-4 md:px-10 md:text-lg">Get in Touch</button>
                 </Link>
