@@ -1,3 +1,18 @@
+const data = [
+ {
+  title: "Front End",
+  text: "Experienced in HTML, CSS, JS, and frameworks like React, and Next.js.",
+ },
+ {
+  title: "Back End",
+  text: "Skilled in OOP and Functional paradigms: C#, PHP, C++, though .Net and Laravel.",
+ },
+ {
+  title: "API's",
+  text: "Adept at utilizing like Facebook's Graph API and Atlassian's REST Jira API's.",
+ }
+];
+
 export default function Showcase(props) {
   return (
     <div className="bg-neutral-900">
@@ -9,31 +24,21 @@ export default function Showcase(props) {
           </p>
         </div>
         <div className="mt-10 flex flex-wrap max-w-6xl justify-around items-center">
-          <div class="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
-            <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">Front End</h3>
-            <div className="border-l-4 border-solid border-neutral-500 mx-5">
-              <p className="px-5 sm:py-5 py-2 sm:text-xl text-lg font-mono font-medium text-neutral-300">
-                Experienced in HTML, CSS, JS, and frameworks like React, and Next.js
-                </p>
-            </div>
-          </div>
-          <div class="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
-            <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">Back End</h3>
-            <div className="border-l-4 border-solid border-neutral-500 mx-5">
-              <p className="px-5 sm:py-5 py-2 sm:text-xl text-lg font-mono font-medium text-neutral-300">
-                Skilled in OOP and Functional paradigms: C#, PHP, C++, though .Net and Laravel
-              </p>
-            </div>
-          </div>
-          <div class="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
-            <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">API's</h3>
-            <div className="border-l-4 border-solid border-neutral-500 mx-5">
-              <p className="px-5 sm:py-5 py-2 sm:text-xl text-lg font-mono font-medium text-neutral-300">
-                Adept at utilizing like Facebook's Graph API and Atlassian's REST Jira API's.
-              </p>
-            </div>
-          </div>
+          {data.map((panel) => (
+            <Panel {...panel}/>
+          ))}
         </div>
+      </div>
+    </div>
+  );
+}
+
+export function Panel(props) {
+  return (
+    <div className="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
+      <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">{props.title}</h3>
+      <div className="border-l-4 border-solid border-neutral-500 mx-5">
+        <p className="px-5 sm:py-5 py-2 sm:text-xl text-lg font-mono font-medium text-neutral-300">{props.text}</p>
       </div>
     </div>
   );
