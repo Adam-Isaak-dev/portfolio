@@ -1,4 +1,4 @@
-import { CodeBracketSquareIcon, ArrowTopRightOnSquareIcon  } from '@heroicons/react/24/outline'
+import { CodeBracketSquareIcon, ArrowTopRightOnSquareIcon  } from '@heroicons/react/24/outline';
 
 const projects = [
   {

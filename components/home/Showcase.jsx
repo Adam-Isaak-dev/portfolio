@@ -35,7 +35,7 @@ export default function Showcase(props) {
 
 export function Panel(props) {
   return (
-    <div className="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
+    <div className="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5" key={"panel-" + props.title}>
       <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">{props.title}</h3>
       <div className="border-l-4 border-solid border-neutral-500 mx-5">
         <p className="px-5 sm:py-5 py-2 sm:text-xl text-lg font-mono font-medium text-neutral-300">{props.text}</p>
