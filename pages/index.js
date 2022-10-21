@@ -3,21 +3,21 @@ import NavBar from "../components/NavBar";
 import HeroSection from "../components/home/HeroSection";
 import Showcase from "../components/home/Showcase";
 import Projects from "../components/home/Projects";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-900">
       <DocumentHeader title="Home" description="my personal portfolio website"/>
       <main>
-        <div className="h-full h-screen bg-gray-900">
+        <div>
           <NavBar />
           <HeroSection />
           <Showcase />
           <Projects />
         </div>
       </main>
-      <footer>
-      </footer>
+      <Footer />
     </div>
   )
 }
