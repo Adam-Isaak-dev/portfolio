@@ -16,7 +16,7 @@ export default function Projects(props) {
   return (
     <div className="bg-neutral-900">
       <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10">
-        <div className="text-left pl-10">
+        <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">My Work</h2>
             <p className="mt-3 text-xl text-neutral-500">
             </p>
