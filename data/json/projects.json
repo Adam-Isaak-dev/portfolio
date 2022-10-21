@@ -1,0 +1,11 @@
+{
+  "projects": [
+    {
+      "name": "Random Joke Generator",
+      "codebase": "https://github.com/Adam-Isaak-dev/random-joke-site",
+      "url": "https://random-joke-site.vercel.app/",
+      "description": "A simple website that lets you get random Dad jokes from an API at the click of a button.",
+      "tags": ["Next.js", "Material UI", "API's"]
+    }
+  ]
+}

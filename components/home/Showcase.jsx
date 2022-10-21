@@ -9,7 +9,7 @@ export default function Showcase(props) {
           </p>
         </div>
         <div className="mt-10 flex flex-wrap max-w-6xl justify-around items-center space-x-5">
-          <div class="w-80 h-80 bg-neutral-800 border-solid border-4 border-neutral-700 hover:border-cyan-600 hover:rounded hover:bg-slate-900">
+          <div class="w-80 h-80 mt-5 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
             <h3 className="text-3xl font-bold text-center text-white py-3">Front End</h3>
             <div className="border-l-4 border-solid border-neutral-500 mx-5">
               <p className="px-5 py-5 text-xl font-mono font-medium text-neutral-300">
@@ -17,7 +17,7 @@ export default function Showcase(props) {
                 </p>
             </div>
           </div>
-          <div class="w-80 h-80 bg-neutral-800 border-solid border-4 border-neutral-700 hover:border-cyan-600 hover:rounded hover:bg-slate-900">
+          <div class="w-80 h-80 mt-5 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
             <h3 className="text-3xl font-bold text-center text-white py-3">Back End</h3>
             <div className="border-l-4 border-solid border-neutral-500 mx-5">
               <p className="px-5 py-5 text-xl font-mono font-medium text-neutral-300">
@@ -25,7 +25,7 @@ export default function Showcase(props) {
               </p>
             </div>
           </div>
-          <div class="w-80 h-80 bg-neutral-800 border-solid border-4 border-neutral-700 hover:border-cyan-600 hover:rounded hover:bg-slate-900">
+          <div class="w-80 h-80 mt-5 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
             <h3 className="text-3xl font-bold text-center text-white py-3">API's</h3>
             <div className="border-l-4 border-solid border-neutral-500 mx-5">
               <p className="px-5 py-5 text-xl font-mono font-medium text-neutral-300">
