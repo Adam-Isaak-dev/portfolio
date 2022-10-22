@@ -61,7 +61,7 @@ export default function Experience() {
           <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-md mx-auto">
             <div className="min-w-full space-y-5">
               {jobs.map((job) => (
-                <Entry {...job}/>
+                <Entry {...job} key={"job-" + job.title}/>
               ))}
             </div>
           </div>
@@ -71,7 +71,7 @@ export default function Experience() {
           <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-md mx-auto">
             <div className="min-w-full space-y-5">
               {education.map((entry) => (
-                <Entry {...entry}/>
+                <Entry {...entry} key={"entry-" + entry.title}/>
               ))}
             </div>
           </div>
@@ -90,7 +90,7 @@ export function Entry(props) {
   }
 
   return (
-    <div className=" md:w-4xl rounded-xl bg-slate-900" key={props.title} >
+    <div className=" md:w-4xl rounded-xl bg-slate-900">
       <div className="rounded-xl lg:h-12 md:h-14 h-20 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={handleClick}>
         <span className="sm:text-xl text-lg font-bold">{props.title}</span>
         <span className="sm:text-lg text-base font-semibold text-right">{props.start} - {props.end}</span>
@@ -98,8 +98,8 @@ export function Entry(props) {
           {open ? <IconCaretUp className="h-6 w-6 text-cyan-100"/> : <IconCaretDown className="h-6 w-6 text-cyan-100"/> }
         </button>
       </div>
-      <div className={(open ? "opacity-100 max-h-96" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300"} id={"background-" + props.title}>
-        <div className="space-y-5 p-5">
+      <div className={(open ? "opacity-100 max-h-96" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
+        <div className=" space-y-5 p-5">
           <div className="flex space-x-3 items-center">
             <IconMapPin className="h-6 w-6 text-cyan-500"/>
             <span className="text-neutral-400">{props.location}</span>
@@ -109,7 +109,7 @@ export function Entry(props) {
           </p>
           <ul className="flex flex-wrap space-x-5 text-neutral-400">
             {props.tags.map((tag) => (
-              <li className="rounded-full px-3 py-1 mt-1 bg-slate-800">{tag}</li>
+              <li className="rounded-full px-3 py-1 mt-1 bg-slate-800" key={"tag-" + tag}>{tag}</li>
             ))}
           </ul>
           {!props.link ? " ": 

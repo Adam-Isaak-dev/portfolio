@@ -23,7 +23,7 @@ export default function Projects(props) {
         </div>
         <div className="flex flex-col justify-center items-center">
           {projects.map((project) => (
-            <Project {...project} />
+            <Project {...project} key={"project-" + project.name}/>
           ))}
         </div>
       </div>
@@ -39,7 +39,7 @@ export function Project(props) {
         <p className="text-neutral-200 md:text-lg text-base">{props.description}</p>
         <ul className="flex justify-start space-x-3 text-neutral-400 mt-5">
           {props.tags.map((tag) => (
-            <li>{tag}</li>
+            <li key={"tag-" + tag}>{tag}</li>
           ))}
         </ul>
       </div>

@@ -2,7 +2,7 @@ import { IconBrandGithub, IconBrandLinkedin, IconMail } from "@tabler/icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-neutral-900 to-gray-900 ">
+    <footer className="bg-gradient-to-b from-neutral-900 to-gray-900 pt-12">
       <div className="flex flex-col justify-center align-center text-neutral-600 text-center py-5">
         <div className="mb-3">
           <span>Built by Adam Isaak</span>
