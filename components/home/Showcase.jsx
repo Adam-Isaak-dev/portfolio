@@ -97,7 +97,7 @@ export default function Showcase(props) {
             Disciplined across the board in a wide variety of tools.
           </p>
         </div>
-        <div className="my-6 h-20 md:max-w-2xl max-w-full flex items-center overflow-hidden bg-slate-900 md:rounded border-x-4 border-neutral-500 outline outline-cyan-900 outline-offset-4 outline-4 motion-reduce:hidden">
+        <div className="my-6 h-20 md:max-w-2xl max-w-full flex items-center overflow-hidden bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4 motion-reduce:hidden">
           <div className="flex">
             <div className="flex animate-scroll-loop-left">
               {logos.map((logo) => (

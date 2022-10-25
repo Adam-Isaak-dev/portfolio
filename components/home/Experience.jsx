@@ -90,7 +90,7 @@ export function Entry(props) {
   }
 
   return (
-    <div className=" md:w-4xl rounded-xl bg-slate-900">
+    <div className="md:w-4xl rounded-xl bg-slate-900 mx-2">
       <div className="rounded-xl lg:h-12 md:h-14 h-20 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={handleClick}>
         <span className="sm:text-xl text-lg font-bold">{props.title}</span>
         <span className="sm:text-lg text-base font-semibold text-right">{props.start} - {props.end}</span>
