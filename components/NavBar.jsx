@@ -6,7 +6,7 @@ const navigation = [
   {name: 'Home', href: '/', anchor: "home"},
   {name: 'About', href: '/#about', anchor: "about"},
   {name: 'Portfolio', href: '/#portfolio', anchor: "portfolio"},
-  // {name: 'Articles', href: '/articles', anchor: false},
+  {name: 'Contact', href: '/#contact', anchor: "contact"},
 ];
 
 export default function NavBar(props) {

@@ -21,6 +21,9 @@ module.exports = {
           '100%': {transform: 'translateX(100%)' },
         },
       },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(closest-side, var(--tw-gradient-stops))',
+      }
     },
   },
   plugins: [],

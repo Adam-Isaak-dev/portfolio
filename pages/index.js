@@ -1,3 +1,4 @@
+import { IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons';
 import DocumentHeader from "../components/DocumentHeader";
 import NavBar from "../components/NavBar";
 import HeroSection from "../components/home/HeroSection";
@@ -5,6 +6,28 @@ import Showcase from "../components/home/Showcase";
 import Projects from "../components/home/Projects";
 import Experience from "../components/home/Experience";
 import Footer from "../components/Footer";
+import Contact from "../components/home/Contact";
+
+const accounts = [
+  {
+    name: "Github",
+    url: "https://github.com/Adam-Isaak-dev/",
+    icon: <IconBrandGithub className="h-6 w-6"/>,
+    colors: "text-white bg-zinc-800 hover:bg-zinc-700"
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/adam-isaak-dev/",
+    icon: <IconBrandLinkedin className="h-6 w-6"/>,
+    colors: "text-white bg-sky-600 hover:bg-sky-400"
+  },
+  {
+    name: "E-Mail",
+    url: "mailto:adam.isaak.dev@gmail.com",
+    icon: <IconMail className="h-6 w-6"/>,
+    colors: "text-white bg-indigo-900 hover:bg-indigo-700"
+  },
+];
 
 export default function Home() {
   return (
@@ -17,9 +40,10 @@ export default function Home() {
           <Showcase />
           <Projects />
           <Experience />
+          <Contact accounts={accounts}/>
         </div>
       </main>
-      <Footer />
+      <Footer accounts={accounts}/>
     </div>
   )
 }
