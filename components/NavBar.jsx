@@ -58,8 +58,8 @@ export default function NavBar(props) {
           </div>
           <div className="">
             <Link href="/#home" scroll={false}>
-              <a className="cursor-pointer md:pb-2 sm:pb-1 hover:text-cyan-200 hover:border-b-4 border-cyan-500" data-anchor="home" onClick={(e) => handleClick(e)}>
-                <span className="lg:text-5xl md:text-4xl sm:text-4xl text-2xl font-logo">	&gt;_&nbsp;Adam_Isaak&nbsp;-dev</span>
+              <a className="cursor-pointer md:pb-2 sm:pb-1 hover:text-cyan-200 hover:border-b-4 border-cyan-500" onClick={(e) => handleClick(e)}>
+                <span className="lg:text-5xl md:text-4xl sm:text-4xl text-2xl font-logo" data-anchor="home">	&gt;_&nbsp;Adam_Isaak&nbsp;-dev</span>
               </a>
             </Link>
           </div>
