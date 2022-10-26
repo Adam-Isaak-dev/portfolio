@@ -36,8 +36,8 @@ export default function NavBar(props) {
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0 lg:py-2">
         <div className="sm:h-16 h-12 relative flex flex-row items-center md:justify-between justify-start">
           <div className="block md:hidden mr-4 ">
-            <div className="flex items-center" onClick={handleOpen}>
-              <button type="button" className="rounded-md text-neutral-300 hover:text-cyan-300 hover:outline-none hover:ring-2 hover:ring-cyan-500" onClick={props.handleOpen}>
+            <div className="flex items-center">
+              <button type="button" className="rounded-md text-neutral-300 hover:text-cyan-300 hover:outline-none hover:ring-2 hover:ring-cyan-500" onClick={(e) => handleOpen(e)}>
                 <span className="sr-only">Open menu</span>
                 {open ? <IconX className="h-6 w-6"/> : <IconMenu2 className="h-6 w-6"/>}
               </button>
@@ -55,7 +55,7 @@ export default function NavBar(props) {
               {navigation.map((item) => (
                 <li className={`${navItemWidth} flex justify-center`} key={item.name}>
                   <Link href={item.href} scroll={!item.anchor}>
-                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={handleScroll}>
+                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleScroll(e)}>
                       <span className="sm:pr-2 pr-1 font-bold">/</span>{item.name}
                     </a>
                   </Link>
@@ -72,7 +72,7 @@ export default function NavBar(props) {
               {navigation.map((item) => (
                 <li className="flex justify-start items-center py-1 ml-5 w-full" key={item.name}>
                   <Link href={item.href} scroll={!item.anchor}>
-                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={handleScroll}>
+                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleScroll(e)}>
                       <span className="sm:pr-2 pr-1 font-bold">/</span>{item.name}
                     </a>
                   </Link>
