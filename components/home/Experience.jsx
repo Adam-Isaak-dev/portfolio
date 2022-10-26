@@ -90,7 +90,7 @@ export function Entry(props) {
   }
 
   return (
-    <div className="md:w-4xl rounded-xl bg-slate-900 mx-2">
+    <div className="md:w-4xl rounded-xl mx-2">
       <div className="rounded-xl lg:h-12 md:h-14 h-20 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={(e) => handleClick(e)}>
         <span className="sm:text-xl text-lg font-bold">{props.title}</span>
         <span className="sm:text-lg text-base font-semibold text-right">{props.start} - {props.end}</span>
@@ -98,30 +98,32 @@ export function Entry(props) {
           {open ? <IconCaretUp className="h-6 w-6 text-cyan-100"/> : <IconCaretDown className="h-6 w-6 text-cyan-100"/> }
         </button>
       </div>
-      <div className={(open ? "opacity-100 max-h-96" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
-        <div className=" space-y-5 p-5">
-          <div className="flex space-x-3 items-center">
-            <IconMapPin className="h-6 w-6 text-cyan-500"/>
-            <span className="text-neutral-400">{props.location}</span>
-          </div>
-          <p className="text-lg text-neutral-200">
-            {props.description}
-          </p>
-          <ul className="flex flex-wrap space-x-5 text-neutral-400">
-            {props.tags.map((tag) => (
-              <li className="rounded-full px-3 py-1 mt-1 bg-slate-800" key={"tag-" + tag}>{tag}</li>
-            ))}
-          </ul>
-          {!props.link ? " ": 
-            <div className="flex space-x-3 justify-end items-center ">
-              <a href={props.url} target="_blank">
-                <span className="text-neutral-400">{props.link}</span>
-              </a>
-              <IconExternalLink className="h-6 w-6 text-cyan-500"/>
+      <div className="bg-slate-900 rounded-xl">
+        <div className={(open ? "opacity-100 max-h-96" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
+          <div className=" space-y-5 p-5">
+            <div className="flex space-x-3 items-center">
+              <IconMapPin className="h-6 w-6 text-cyan-500"/>
+              <span className="text-neutral-400">{props.location}</span>
             </div>
-          }
+            <p className="text-lg text-neutral-200">
+              {props.description}
+            </p>
+            <ul className="flex flex-wrap space-x-5 text-neutral-400">
+              {props.tags.map((tag) => (
+                <li className="rounded-full px-3 py-1 mt-1 bg-slate-800" key={"tag-" + tag}>{tag}</li>
+              ))}
+            </ul>
+            {!props.link ? " ": 
+              <div className="flex space-x-3 justify-end items-center ">
+                <a href={props.url} target="_blank">
+                  <span className="text-neutral-400">{props.link}</span>
+                </a>
+                <IconExternalLink className="h-6 w-6 text-cyan-500"/>
+              </div>
+            }
+          </div>
+          <p></p>
         </div>
-        <p></p>
       </div>
     </div>
   );

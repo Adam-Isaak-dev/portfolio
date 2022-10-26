@@ -31,7 +31,7 @@ export default function Home() {
     <div className="bg-gray-900">
       <DocumentHeader title="Home" description="my personal portfolio website"/>
       <main>
-        <div id="home">
+        <div className="pt-20" id="home">
           <NavBar />
           <HeroSection />
           <Showcase />

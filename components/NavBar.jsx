@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { IconMenu2, IconX } from '@tabler/icons';
 
 const navigation = [
-  {name: 'Home', href: '/', anchor: "home"},
+  {name: 'Home', href: '/#home', anchor: "home"},
   {name: 'About', href: '/#about', anchor: "about"},
   {name: 'Portfolio', href: '/#portfolio', anchor: "portfolio"},
   {name: 'Contact', href: '/#contact', anchor: "contact"},
@@ -11,13 +11,14 @@ const navigation = [
 
 export default function NavBar(props) {
   const [open, setOpen] = React.useState(false);
+  const [stuck, setStuck] = React.useState(false);
   const navItemWidth = `w-1/${navigation.length}`;
 
   function handleOpen() {
     setOpen(!open);
   }
 
-  function handleScroll(e) {
+  function handleClick(e) {
     if(e.target.dataset.anchor) {
       e.preventDefault();
 
@@ -31,8 +32,20 @@ export default function NavBar(props) {
     }
   }
 
+  function handleScroll() {
+    const hero = document.getElementById("hero");
+    const rect = hero.getBoundingClientRect();
+  
+    setStuck(rect.bottom < 0);
+  }
+
+  React.useEffect(() => {
+    document.addEventListener('scroll', handleScroll, true);
+    return () => document.removeEventListener('scroll', handleScroll);
+  })
+
   return (
-    <nav className="text-white">
+    <nav className={"text-white border-cyan-800 border-solid transition-transform duration-500 ease-in-out " + (stuck ? "sticky top-0 bg-gradient-to-r from-gray-900 to-cyan-900 border-b-2 z-20 translate-y-0 shadow-2xl" : "bg-transparent border-b-0 -translate-y-20" )}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0 lg:py-2">
         <div className="sm:h-16 h-12 relative flex flex-row items-center md:justify-between justify-start">
           <div className="block md:hidden mr-4 ">
@@ -44,8 +57,8 @@ export default function NavBar(props) {
             </div>
           </div>
           <div className="">
-            <Link href="/">
-              <a className="cursor-pointer md:pb-2 sm:pb-1 hover:text-cyan-200 hover:border-b-4 border-cyan-500">
+            <Link href="/#home" scroll={false}>
+              <a className="cursor-pointer md:pb-2 sm:pb-1 hover:text-cyan-200 hover:border-b-4 border-cyan-500" data-anchor="home" onClick={(e) => handleClick(e)}>
                 <span className="lg:text-5xl md:text-4xl sm:text-4xl text-2xl font-logo">	&gt;_&nbsp;Adam_Isaak&nbsp;-dev</span>
               </a>
             </Link>
@@ -55,7 +68,7 @@ export default function NavBar(props) {
               {navigation.map((item) => (
                 <li className={`${navItemWidth} flex justify-center`} key={item.name}>
                   <Link href={item.href} scroll={!item.anchor}>
-                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleScroll(e)}>
+                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleClick(e)}>
                       <span className="sm:pr-2 pr-1 font-bold">/</span>{item.name}
                     </a>
                   </Link>
@@ -72,7 +85,7 @@ export default function NavBar(props) {
               {navigation.map((item) => (
                 <li className="flex justify-start items-center py-1 ml-5 w-full" key={item.name}>
                   <Link href={item.href} scroll={!item.anchor}>
-                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleScroll(e)}>
+                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleClick(e)}>
                       <span className="sm:pr-2 pr-1 font-bold">/</span>{item.name}
                     </a>
                   </Link>

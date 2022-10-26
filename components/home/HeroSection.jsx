@@ -1,9 +1,18 @@
 import Link from 'next/link';
 
 export default function HeroSection(props) {
+
+  function handleClick(e) {
+    e.preventDefault();
+
+    document.getElementById(e.target.dataset.anchor).scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
   return (
-    <div className="bg-gradient-to-b from-gray-900 to-neutral-900">
-      <div className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 pb-28">
+    <div className="bg-gradient-to-b from-gray-900 to-neutral-900" id="hero">
+      <div className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 pb-36">
         <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
               <span className="block xl:inline">Greetings, I'm </span>
@@ -17,13 +26,17 @@ export default function HeroSection(props) {
             </p>
             <div className="mt-5 sm:mt-8 flex justify-center items-center flex-col sm:flex-row  sm:space-y-0 space-y-3 sm:space-x-3 space-x-0">
               <div className="rounded-md shadow">
-                <Link href="/">
-                  <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-8 py-3 text-base font-medium text-white hover:bg-cyan-700 md:py-4 md:px-10 md:text-lg">Projects</button>
+                <Link href="/#portfolio" scroll={false}>
+                  <a onClick={(e) => handleClick(e)}>
+                    <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-8 py-3 text-base font-medium text-white hover:bg-cyan-700 md:py-4 md:px-10 md:text-lg" data-anchor="portfolio">Projects</button>
+                  </a>
                 </Link>
               </div>
               <div>
-                <Link href="/">
-                  <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-100 px-8 py-3 text-base font-medium text-cyan-700 hover:bg-cyan-200 md:py-4 md:px-10 md:text-lg">Get in Touch</button>
+                <Link href="/#contact" scroll={false}>
+                  <a onClick={(e) => handleClick(e)}>
+                    <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-100 px-8 py-3 text-base font-medium text-cyan-700 hover:bg-cyan-200 md:py-4 md:px-10 md:text-lg" data-anchor="contact">Get in Touch</button>
+                  </a>
                 </Link>
               </div>
             </div>

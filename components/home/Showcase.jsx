@@ -89,9 +89,9 @@ const logos = [
 
 export default function Showcase(props) {
   return (
-    <div className="bg-neutral-900" id="about">
-      <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10 flex flex-col justify-center items-center">
-        <div className="text-center">
+    <div className="bg-neutral-900" >
+      <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10 flex flex-col justify-center items-center" >
+        <div className="text-center pt-36" id="about">
           <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">What I Do</h2>
           <p className="mt-3 text-xl text-neutral-500">
             Disciplined across the board in a wide variety of tools.
