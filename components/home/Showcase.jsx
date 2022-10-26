@@ -1,17 +1,21 @@
 import { Html5PlainIcon, Css3PlainIcon, BootstrapPlainIcon, TailwindcssPlainIcon, JavascriptPlainIcon, ReactOriginalIcon, MaterialuiPlainIcon, NextjsOriginalIcon, CplusplusPlainIcon, CsharpPlainIcon, MicrosoftsqlserverPlainIcon, DotNetPlainIcon, PhpPlainIcon, LaravelPlainIcon, MysqlPlainIcon, GitPlainIcon, BashPlainIcon } from 'react-devicons';
+import { IconAppWindow, IconDatabase, IconApiApp} from '@tabler/icons';
 
 const panels = [
  {
   title: "Front End",
   text: "Experienced in HTML, CSS, JS, and frameworks like React, and Next.js.",
+  icon: <IconAppWindow className="h-10 w-10"/>,
  },
  {
   title: "Back End",
   text: "Skilled in OOP and Functional paradigms: C#, PHP, C++, though .Net and Laravel.",
+  icon: <IconDatabase className="h-10 w-10"/>,
  },
  {
   title: "API's",
   text: "Adept at utilizing like Facebook's Graph API and Atlassian's REST Jira API's.",
+  icon: <IconApiApp className="h-10 w-10"/>,
  }
 ];
 const logos = [
@@ -111,7 +115,7 @@ export default function Showcase(props) {
             </div>
           </div>
         </div>
-        <div className="mt-3 flex flex-wrap max-w-6xl justify-around items-center">
+        <div className="mt-3 flex flex-wrap xl:max-w-6xl lg:max-w-3xl justify-around items-center">
           {panels.map((panel) => (
             <Panel {...panel} key={"panel-" + panel.title}/>
           ))}
@@ -133,10 +137,13 @@ export function Logo(props) {
 
 export function Panel(props) {
   return (
-    <div className="sm:w-80 sm:h-80 w-64 h-64 mt-5 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5">
+    <div className="sm:w-80 sm:h-80 w-64 h-72 mt-10 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5 relative">
       <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">{props.title}</h3>
+      <div className="flex justify-center items-center text-cyan-200 py-2">
+        {props.icon}
+      </div>
       <div className="border-l-4 border-solid border-neutral-500 mx-5">
-        <p className="px-5 sm:py-5 py-2 sm:text-xl text-lg font-mono font-medium text-neutral-300">{props.text}</p>
+        <p className="px-5 sm:py-5 py-2 md:text-xl sm:text-lg text-base font-mono font-medium text-neutral-300">{props.text}</p>
       </div>
     </div>
   );
