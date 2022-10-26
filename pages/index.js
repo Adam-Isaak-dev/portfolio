@@ -1,12 +1,9 @@
 import { IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons';
+
 import DocumentHeader from "../components/DocumentHeader";
 import NavBar from "../components/NavBar";
-import HeroSection from "../components/home/HeroSection";
-import Showcase from "../components/home/Showcase";
-import Projects from "../components/home/Projects";
-import Experience from "../components/home/Experience";
 import Footer from "../components/Footer";
-import Contact from "../components/home/Contact";
+import { HeroSection, Showcase, About, Projects, Experience, Contact } from '../components/home'
 
 const accounts = [
   {
@@ -38,6 +35,7 @@ export default function Home() {
           <NavBar />
           <HeroSection />
           <Showcase />
+          <About />
           <Projects />
           <Experience />
           <Contact accounts={accounts}/>
