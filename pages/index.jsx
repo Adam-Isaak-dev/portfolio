@@ -20,7 +20,7 @@ const accounts = [
   },
   {
     name: "E-Mail",
-    url: "mailto:adam.isaak.dev@gmail.com",
+    url: "mailto:contact@adamisaak.dev",
     icon: <IconMail className="h-6 w-6"/>,
     colors: "text-white bg-indigo-900 hover:bg-indigo-700"
   },
