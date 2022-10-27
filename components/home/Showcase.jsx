@@ -1,23 +1,5 @@
 import { Html5PlainIcon, Css3PlainIcon, BootstrapPlainIcon, TailwindcssPlainIcon, JavascriptPlainIcon, ReactOriginalIcon, MaterialuiPlainIcon, NextjsOriginalIcon, CplusplusPlainIcon, CsharpPlainIcon, MicrosoftsqlserverPlainIcon, DotNetPlainIcon, PhpPlainIcon, LaravelPlainIcon, MysqlPlainIcon, GitPlainIcon, BashPlainIcon } from 'react-devicons';
-import { IconAppWindow, IconDatabase, IconApiApp} from '@tabler/icons';
 
-const panels = [
- {
-  title: "Front End",
-  text: "Experienced in HTML, CSS, JS, and frameworks like React, and Next.js.",
-  icon: <IconAppWindow className="h-10 w-10"/>,
- },
- {
-  title: "Back End",
-  text: "Skilled in OOP and Functional paradigms: C#, PHP, C++, though .Net and Laravel.",
-  icon: <IconDatabase className="h-10 w-10"/>,
- },
- {
-  title: "API's",
-  text: "Adept at utilizing like Facebook's Graph API and Atlassian's REST Jira API's.",
-  icon: <IconApiApp className="h-10 w-10"/>,
- }
-];
 const logos = [
   {
     text: "HTML 5",
@@ -89,19 +71,17 @@ const logos = [
   },
 ];
 
-
-
-export default function Showcase(props) {
+export default function Showcase() {
   return (
-    <div className="bg-neutral-900" >
-      <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10 flex flex-col justify-center items-center" >
-        <div className="text-center pt-36" id="about">
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">What I Do</h2>
-          <p className="mt-3 text-xl text-neutral-500">
-            Disciplined across the board in a wide variety of tools.
+    <div className="bg-neutral-900">
+      <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10 flex flex-col justify-center items-center">
+        <div className="bg-neutral-700 h-1 w-1/2 rounded-full mb-2" />
+        <div className="mb-8 w-full pl-5 text-center">
+          <p className="mt-3 text-base sm:text-lg md:text-xl  text-neutral-300 ">
+            &lt;/ What I've Used /&gt;
           </p>
         </div>
-        <div className="my-6 h-20 md:max-w-2xl max-w-full flex items-center overflow-hidden bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4 motion-reduce:hidden">
+        <div className="h-20 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-full flex items-center overflow-hidden bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4 motion-reduce:hidden">
           <div className="flex">
             <div className="flex animate-scroll-loop-left">
               {logos.map((logo) => (
@@ -115,11 +95,7 @@ export default function Showcase(props) {
             </div>
           </div>
         </div>
-        <div className="mt-3 flex flex-wrap xl:max-w-6xl lg:max-w-3xl justify-around items-center">
-          {panels.map((panel) => (
-            <Panel {...panel} key={"panel-" + panel.title}/>
-          ))}
-        </div>
+        <div className="bg-neutral-700 h-1 w-52 w-1/2 rounded-full mt-10" />
       </div>
     </div>
   );
@@ -130,20 +106,6 @@ export function Logo(props) {
     <div className="mx-3">
       <div title={props.text}>
         {props.icon}
-      </div>
-    </div>
-  );
-}
-
-export function Panel(props) {
-  return (
-    <div className="sm:w-80 sm:h-80 w-64 h-72 mt-10 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5 relative">
-      <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">{props.title}</h3>
-      <div className="flex justify-center items-center text-cyan-200 py-2">
-        {props.icon}
-      </div>
-      <div className="border-l-4 border-solid border-neutral-500 mx-5">
-        <p className="px-5 sm:py-5 py-2 md:text-xl sm:text-lg text-base font-mono font-medium text-neutral-300">{props.text}</p>
       </div>
     </div>
   );

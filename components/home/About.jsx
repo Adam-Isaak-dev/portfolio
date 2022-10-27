@@ -5,27 +5,27 @@ const sectionData = [
   {
     id: "about-summary",
     title: "Summary",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a varius metus. Quisque aliquam imperdiet lacinia. Aenean cursus vehicula dapibus. Mauris nec dui quis lorem tincidunt elementum ullamcorper nec leo. Cras vestibulum pretium dui. Vestibulum imperdiet, eros vitae varius congue.",
+    text: "I love figuring out how things work, looking at all the individual parts and seeing how it's all put back together. I take this style of understanding and use it where I can. Whether it's keeping things nice and organized, or figuring out the source of a problem. In other parts I focus in on the details and strive to keep things clear and accurate, for readable code and efficient communication",
     icons: {
-      key: <IconCodeCircle />,
-      header: <IconMessage2Code />,
+      key: <IconBracketsContain />,
+      header: <IconBracketsContainStart />,
     },
     selected: true,
   },
   {
-    id: "about-background",
-    title: "Background",
-    text: "Aliquam erat volutpat. Morbi tempor maximus enim, scelerisque suscipit justo fringilla elementum. Mauris dapibus hendrerit porta. Suspendisse vulputate metus vel nunc cursus, sed efficitur ante finibus. Sed egestas non eros et posuere. Maecenas ante libero, luctus a orci ut, porttitor feugiat dolor. Praesent cursus mi nec nibh suscipit, et interdum.",
+    id: "about-skills",
+    title: "Skills",
+    text: "I enjoy learning new languages and frameworks. My approach to adapting quickly is to focus on using the broad concepts and principles, to guide my work rather than syntax. Starting with C++ I've learned: C#, Javascript, PHP, .Net, React, Laravel, SQL server, MySQL, and more.",
     icons: {
-      key: <IconBracketsContain />,
-      header: <IconBracketsContainStart />,
+      key: <IconCodeCircle />,
+      header: <IconMessage2Code />,
     },
     selected: false,
   },
   {
     id: "about-me",
     title: "Interests",
-    text: "Maecenas malesuada justo vitae libero dignissim fermentum. Morbi at orci nec augue egestas facilisis ut in nisi. Maecenas sed elit turpis. Nullam accumsan dolor vitae imperdiet pulvinar. Phasellus rutrum orci non feugiat ornare. Sed lobortis est commodo orci ultrices laoreet sed a ex. Nullam malesuada dolor eget varius iaculis. Nullam.",
+    text: "Outside of programing you can usually find me preparing to DM my next Dungeons and Dragons session, or trying out the latest metriodvania to come out on Steam.",
     icons: {
       key: <IconBooks />,
       header: <IconBook />,
@@ -58,7 +58,7 @@ export default function About() {
           <div className="mb-10 mx-5">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">About Me</h2>
               <p className="mt-3 text-base sm:text-lg md:text-xl text-neutral-500">
-                Aliquam ante tellus, faucibus at luctus vel, aliquet ac risus. Maecenas varius cursus lorem in varius.
+                I'm a Generalist Programer / Software Developer from Winnipeg, Canada.
               </p>
           </div>
           <div className="flex md:flex-row flex-col justify-center md:space-x-10">

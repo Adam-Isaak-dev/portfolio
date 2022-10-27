@@ -3,7 +3,7 @@ import { IconBrandGithub, IconBrandLinkedin, IconMail } from '@tabler/icons';
 import DocumentHeader from "../components/DocumentHeader";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
-import { HeroSection, Showcase, About, Projects, Experience, Contact } from '../components/home'
+import { HeroSection, Principles, Showcase, About, Projects, Experience, Contact } from '../components/home'
 
 const accounts = [
   {
@@ -34,6 +34,7 @@ export default function Home() {
         <div className="pt-20" id="home">
           <NavBar />
           <HeroSection />
+          <Principles />
           <Showcase />
           <About />
           <Projects />

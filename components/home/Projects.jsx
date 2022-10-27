@@ -5,21 +5,21 @@ const projects = [
     name: "Portfolio Website",
     codebase: false,
     url: false,
-    description: "This website itself. I designed this site to make it easy to add content without much hassle. Additionally I focused on making the site look visual appealing by leverage Tailwind and CSS animations.",
+    description: "This website itself. I designed this site to make it easy to add content without much hassle. Additionally I focused on making the site look visual appealing by leveraging Tailwind and CSS animations.",
     tags: ["Next.js", "React", "Tailwind CSS", "CSS", "HTML", "Javascript"]
   },
   {
     name: "Coding Challenges",
     codebase: "https://github.com/Adam-Isaak-dev/coding-challenges",
     url: false,
-    description: "A collection of coding challenges I've worked focusing on algorithmic thinking and how to optimize code for the best possible results.",
+    description: "A collection of coding challenges I've worked focusing on algorithmic thinking and how to optimize code for the most efficient results.",
     tags: ["Leetcode", "C++", "Algorithms", "Optimizing"],
   },
   {
     name: "Random Joke Generator",
     codebase: "https://github.com/Adam-Isaak-dev/random-joke-site",
     url: "https://random-joke-site.vercel.app/",
-    description: "A simple website that lets you get random Dad jokes from an API at the click of a button. Made for fun and because of my family's love for bad jokes.",
+    description: "A simple website that lets you get random dad jokes from an API at the click of a button. Made for fun and because of my family's love for bad jokes.",
     tags: ["Next.js", "Material UI", "API"]
   },
 ];

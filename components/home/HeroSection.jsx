@@ -19,10 +19,10 @@ export default function HeroSection(props) {
               <span className="block text-cyan-300 xl:inline">Adam</span>
             </h1>
             <p className="mt-3 text-2xl text-gray-300">
-              <span>&lt;&nbsp;Full&nbsp;Stack&nbsp;Developer&nbsp;&gt;</span>
+              <span>&lt;&nbsp;Software&nbsp;Developer&nbsp;&gt;</span>
             </p>
             <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl">
-              Always willing to learn something new and figure out what makes something tick.
+              Welcome to my little corner of the internet. This my website, feel free to stay a while and take a look around.
             </p>
             <div className="mt-5 sm:mt-8 flex justify-center items-center flex-col sm:flex-row  sm:space-y-0 space-y-3 sm:space-x-3 space-x-0">
               <div className="rounded-md shadow">
