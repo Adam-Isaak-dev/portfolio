@@ -29,7 +29,7 @@ const accounts = [
 export default function Home() {
   return (
     <div className="bg-gray-900">
-      <DocumentHeader title="Home" description="my personal portfolio website"/>
+      <DocumentHeader title="Adam Isaak - Developer" description="My personal portfolio website, come take a look!"/>
       <main>
         <div className="pt-20" id="home">
           <NavBar />

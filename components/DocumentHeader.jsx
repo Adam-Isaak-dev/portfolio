@@ -1,11 +1,9 @@
 import Head from 'next/head'
 
 export default function(props) {
-  const pageTitle = (props.title ? `${props.title} | ` : "") +  " Adam Isaak";
-
   return (
     <Head>
-        <title>{pageTitle}</title>
+        <title>{props.title}</title>
         <meta name="description" content={props.description} />
         <meta charset="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
