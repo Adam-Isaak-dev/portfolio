@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IconSourceCode, IconTimelineEvent, IconBracketsContain, IconBooks, IconMessage2Code, IconBracketsContainStart, IconBook  } from '@tabler/icons';
+import { IconCodeCircle, IconBracketsContain, IconBooks, IconMessage2Code, IconBracketsContainStart, IconBook  } from '@tabler/icons';
 
 const sectionData = [
   {
@@ -7,7 +7,7 @@ const sectionData = [
     title: "Summary",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a varius metus. Quisque aliquam imperdiet lacinia. Aenean cursus vehicula dapibus. Mauris nec dui quis lorem tincidunt elementum ullamcorper nec leo. Cras vestibulum pretium dui. Vestibulum imperdiet, eros vitae varius congue.",
     icons: {
-      key: <IconSourceCode />,
+      key: <IconCodeCircle />,
       header: <IconMessage2Code />,
     },
     selected: true,

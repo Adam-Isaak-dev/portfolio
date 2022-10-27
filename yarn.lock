@@ -42,11 +42,6 @@
   resolved "https://registry.yarnpkg.com/@fontsource/vt323/-/vt323-4.5.10.tgz#133e5c7a1878e3d1fb46b5e8ce6a2f85c7f9fb38"
   integrity sha512-INiL8rWWj/dKZ+oYXPQgdV0OYe6lD3+gsYbPrhHyiJYWlbACSUPbokNXKVrDqRqzXiLj5swKqf9TSJyC7gUGuQ==
 
-"@heroicons/react@^2.0.12":
-  version "2.0.12"
-  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-2.0.12.tgz#7e5a16c82512f89a30266dd36f8b8465b3e3e216"
-  integrity sha512-FZxKh3i9aKIDxyALTgIpSF2t6V6/eZfF5mRu41QlwkX3Oxzecdm1u6dpft6PQGxIBwO7TKYWaMAYYL8mp/EaOg==
-
 "@humanwhocodes/config-array@^0.10.5":
   version "0.10.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.7.tgz#6d53769fd0c222767e6452e8ebda825c22e9f0dc"
