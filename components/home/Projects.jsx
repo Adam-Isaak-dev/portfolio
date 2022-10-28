@@ -3,7 +3,7 @@ import { IconSourceCode, IconExternalLink  } from '@tabler/icons';
 const projects = [
   {
     name: "Portfolio Website",
-    codebase: false,
+    codebase: "https://github.com/Adam-Isaak-dev/portfolio",
     url: false,
     description: "This website itself. I designed this site to make it easy to add content without much hassle. Additionally I focused on making the site look visual appealing by leveraging Tailwind and CSS animations.",
     tags: ["Next.js", "React", "Tailwind CSS", "CSS", "HTML", "Javascript"]
