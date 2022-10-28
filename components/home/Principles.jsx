@@ -42,12 +42,12 @@ export default function Principles(props) {
 
 export function Panel(props) {
   return (
-    <div className="sm:w-80 sm:h-80 w-64 h-88 mt-10 mx-3 bg-neutral-800 border-solid border-4 border-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5 focus:-translate-y-5 relative flex flex-col justify-between">
+    <div className="sm:w-80 sm:h-88 w-64 h-88 mt-10 mx-3 bg-neutral-800 rounded rounded ring-4 ring-neutral-700 transition duration-150 ease-in-out hover:-translate-y-5 focus:-translate-y-5 relative flex flex-col justify-between">
       <h3 className="sm:text-3xl text-2xl font-bold text-center text-white py-3">{props.title}</h3>
       <div className="flex justify-center items-center text-cyan-200 py-2">
         {props.icon}
       </div>
-      <div className="border-l-4 border-solid border-neutral-500 mx-5 mb-5">
+      <div className="rounded border-l-4 border-solid border-neutral-500 mx-5 mb-5">
         <p className="px-5 sm:py-5 py-2 md:text-xl sm:text-lg text-base font-mono font-medium text-neutral-300 contrast-more:text-neutral-100">{props.text}</p>
       </div>
     </div>

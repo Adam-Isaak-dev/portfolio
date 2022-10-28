@@ -10,6 +10,7 @@ module.exports = {
         logo: ['Share\-Tech\-Mono','monospace']
       },
       spacing: {
+        '84': '21rem',
         '88': '22rem',
         '128': '32rem',
         '144': '36rem',

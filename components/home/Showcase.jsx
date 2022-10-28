@@ -81,7 +81,7 @@ export default function Showcase() {
             A showcase of what languages, frameworks, and tools I&apos;ve used thus far...
           </p>
         </div>
-        <div className="h-20 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-full flex items-center motion-safe:overflow-hidden motion-reduce:overflow-scroll bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4">
+        <div className="h-24 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-full flex items-center motion-safe:overflow-hidden motion-reduce:overflow-scroll bg-slate-900 md:rounded-lg border-solid border-cyan-900 border-4">
           <div className="flex">
             <div className="flex motion-safe:animate-scroll-loop-left">
               {logos.map((logo) => (
