@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         logo: ['Share\\Tech\\Mono','monospace']
       },
+      spacing: {
+        '128': '32rem',
+      },
       animation: {
         'scroll-loop-left': 'loop-left 30s linear infinite',
         'scroll-loop-right': 'loop-left 30s linear infinite',

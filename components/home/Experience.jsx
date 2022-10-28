@@ -56,7 +56,7 @@ export default function Experience() {
         </div>
         <div className="w-full">
           <div  className="px-5 mb-5">
-            <h3 className="text-2xl w-full text-neutral-500 border-b-4 border-solid border-neutral-500 text-center">Professional Experience</h3>
+            <h3 className="text-2xl w-full text-neutral-400 contrast-more:text-neutral-200 text-center">Professional Experience</h3>
           </div>
           <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-md mx-auto">
             <div className="min-w-full space-y-5">
@@ -65,8 +65,8 @@ export default function Experience() {
               ))}
             </div>
           </div>
-          <div  className="px-5 mb-5 mt-10">
-            <h3 className="text-2xl w-full text-neutral-500 border-b-4 border-solid border-neutral-500 text-center">Education</h3>
+          <div  className="px-5 mb-5 mt-12">
+            <h3 className="text-2xl w-full text-neutral-400 contrast-more:text-neutral-200 text-center">Education</h3>
           </div>
           <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-md mx-auto">
             <div className="min-w-full space-y-5">
@@ -94,13 +94,13 @@ export function Entry(props) {
       <div className="rounded-xl lg:h-12 md:h-14 h-20 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={(e) => handleClick(e)}>
         <span className="sm:text-xl text-lg font-bold">{props.title}</span>
         <span className="sm:text-lg text-base font-semibold text-right">{props.start} - {props.end}</span>
-        <button className="absolute -bottom-3 left-1/2 rounded-full p-0.5 bg-cyan-600">
+        <button className="absolute -bottom-3 left-1/2 rounded-full p-0.5 bg-cyan-600 transition-transform duration-150 ease-in-out hover:scale-125 focus:scale-125" aria-hidden="true">
           {open ? <IconCaretUp className="h-6 w-6 text-cyan-100"/> : <IconCaretDown className="h-6 w-6 text-cyan-100"/> }
         </button>
       </div>
       <div className="bg-slate-900 rounded-xl">
-        <div className={(open ? "opacity-100 max-h-96" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
-          <div className=" space-y-5 p-5">
+        <div className={(open ? "opacity-100 max-h-128" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
+          <div className="space-y-5 p-5">
             <div className="flex space-x-3 items-center">
               <IconMapPin className="h-6 w-6 text-cyan-500"/>
               <span className="text-neutral-400">{props.location}</span>
@@ -114,15 +114,11 @@ export function Entry(props) {
               ))}
             </ul>
             {!props.link ? " ": 
-              <div className="flex space-x-3 justify-end items-center ">
-                <a href={props.url} target="_blank">
-                  <span className="text-neutral-400">{props.link}</span>
-                </a>
-                <IconExternalLink className="h-6 w-6 text-cyan-500"/>
-              </div>
+              <a className="flex space-x-3 justify-end items-center" href={props.url} target="_blank">
+                <span className="text-neutral-400">{props.link}</span><IconExternalLink className="h-6 w-6 text-cyan-500"/>
+              </a>
             }
           </div>
-          <p></p>
         </div>
       </div>
     </div>

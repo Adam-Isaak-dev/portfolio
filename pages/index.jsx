@@ -9,20 +9,20 @@ const accounts = [
   {
     name: "Github",
     url: "https://github.com/Adam-Isaak-dev/",
-    icon: <IconBrandGithub className="h-6 w-6"/>,
-    colors: "text-white bg-zinc-800 hover:bg-zinc-700"
+    icon: <IconBrandGithub className="h-6 w-6" aria-label="github icon"/>,
+    colors: "text-white bg-zinc-800 hover:bg-zinc-700 focus:bg-zinc-700"
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/adam-isaak-dev/",
-    icon: <IconBrandLinkedin className="h-6 w-6"/>,
-    colors: "text-white bg-sky-600 hover:bg-sky-400"
+    icon: <IconBrandLinkedin className="h-6 w-6" aria-label="LinkedIn icon"/>,
+    colors: "text-white bg-sky-600 hover:bg-sky-400 focus:bg-sky-400"
   },
   {
     name: "E-Mail",
     url: "mailto:contact@adamisaak.dev",
-    icon: <IconMail className="h-6 w-6"/>,
-    colors: "text-white bg-indigo-900 hover:bg-indigo-700"
+    icon: <IconMail className="h-6 w-6" aria-label="email icon"/>,
+    colors: "text-white bg-indigo-900 hover:bg-indigo-700 focus:bg-indigo-700"
   },
 ];
 
