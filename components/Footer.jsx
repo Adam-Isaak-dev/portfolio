@@ -7,7 +7,7 @@ export default function Footer(props) {
         </div>
         <div className="flex justify-center align-center space-x-3">
           {props.accounts.map((account) => (
-            <a href={account.url} target="_blank" title={account.name} key={account.name}>
+            <a href={account.url} target="_blank" rel="noreferrer" title={account.name} key={account.name}>
               {account.icon}
             </a>
           ))}

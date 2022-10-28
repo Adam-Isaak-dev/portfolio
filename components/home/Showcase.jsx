@@ -76,9 +76,9 @@ export default function Showcase() {
     <div className="bg-neutral-900">
       <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10 flex flex-col justify-center items-center">
         <div className="mb-8 w-full px-5 text-center">
-          <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">&lt;/ What I've Used /&gt;</h3>
+          <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl md:text-4xl">&lt;/ What I&apos;ve Used /&gt;</h3>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-neutral-400 contrast-more:text-neutral-200">
-            A showcase of what languages, frameworks, and tools I've used thus far...
+            A showcase of what languages, frameworks, and tools I&apos;ve used thus far...
           </p>
         </div>
         <div className="h-20 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-full flex items-center motion-safe:overflow-hidden motion-reduce:overflow-scroll bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4">

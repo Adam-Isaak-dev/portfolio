@@ -2,7 +2,6 @@ import "@fontsource/vt323";
 import "@fontsource/share-tech-mono";
 import '../styles/globals.css';
 
-
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }

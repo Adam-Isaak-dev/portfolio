@@ -15,7 +15,7 @@ export default function HeroSection(props) {
       <div className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28 pb-36">
         <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-              <span className="block xl:inline">Greetings, I'm </span>
+              <span className="block xl:inline">Greetings, I&apos;m </span>
               <span className="block text-cyan-300 xl:inline">Adam</span>
             </h1>
             <p className="mt-3 text-2xl text-gray-300 contrast-more:text-gray-100">

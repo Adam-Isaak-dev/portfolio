@@ -114,7 +114,7 @@ export function Entry(props) {
               ))}
             </ul>
             {!props.link ? " ": 
-              <a className="flex space-x-3 justify-end items-center" href={props.url} target="_blank">
+              <a className="flex space-x-3 justify-end items-center" href={props.url} target="_blank" rel="noreferrer">
                 <span className="text-neutral-400">{props.link}</span><IconExternalLink className="h-6 w-6 text-cyan-500"/>
               </a>
             }

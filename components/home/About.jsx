@@ -5,7 +5,7 @@ const sectionData = [
   {
     id: "about-summary",
     title: "Summary",
-    text: "I love figuring out how things work, looking at all the individual parts and seeing how it's all put back together. I take this style of understanding and use it where I can. Whether it's keeping things nice and organized, or figuring out the source of a problem. In other parts I focus in on the details and strive to keep things clear and accurate, for readable code and efficient communication",
+    text: "I love figuring out how things work, looking at all the individual parts and seeing how it's all put back together. I take this style of understanding and use it where I can. Whether it&apos;s keeping things nice and organized, or figuring out the source of a problem. In other parts I focus in on the details and strive to keep things clear and accurate, for readable code and efficient communication",
     icons: {
       key: <IconBracketsContain aria-hidden="true" />,
       header: <IconBracketsContainStart aria-hidden="true"/>,
@@ -15,7 +15,7 @@ const sectionData = [
   {
     id: "about-skills",
     title: "Skills",
-    text: "I enjoy learning new languages and frameworks. My approach to adapting quickly is to focus on using the broad concepts and principles, to guide my work rather than syntax. Starting with C++ I've learned: C#, Javascript, PHP, .Net, React, Laravel, SQL server, MySQL, and more.",
+    text: "I enjoy learning new languages and frameworks. My approach to adapting quickly is to focus on using the broad concepts and principles, to guide my work rather than syntax. Starting with C++ I&apos;ve learned: C#, Javascript, PHP, .Net, React, Laravel, SQL server, MySQL, and more.",
     icons: {
       key: <IconCodeCircle aria-hidden="true"/>,
       header: <IconMessage2Code aria-hidden="true"/>,
@@ -57,7 +57,7 @@ export default function About() {
         <div className="mb-10 mx-5">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">About Me</h2>
             <p className="mt-3 text-base sm:text-lg md:text-xl text-neutral-400 contrast-more:text-neutral-200">
-              I'm a Generalist Programer / Software Developer from Winnipeg, Canada.
+              I&apos;m a Generalist Programer / Software Developer from Winnipeg, Canada.
             </p>
         </div>
         <div className="flex md:flex-row flex-col justify-center md:space-x-10">
