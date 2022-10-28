@@ -108,9 +108,9 @@ export function Entry(props) {
             <p className="text-lg text-neutral-200">
               {props.description}
             </p>
-            <ul className="flex flex-wrap space-x-5 text-neutral-400">
+            <ul className="flex flex-wrap text-neutral-400">
               {props.tags.map((tag) => (
-                <li className="rounded-full px-3 py-1 mt-1 bg-slate-800" key={"tag-" + tag}>{tag}</li>
+                <li className="rounded-full mr-3 px-3 py-1 mt-1 bg-slate-800" key={"tag-" + tag}>{tag}</li>
               ))}
             </ul>
             {!props.link ? " ": 

@@ -47,7 +47,7 @@ export default function NavBar(props) {
   return (
     <nav className={"text-white border-cyan-800 border-solid transition-transform duration-500 ease-in-out " + (stuck ? "sticky top-0 bg-gradient-to-r from-gray-900 to-cyan-900 border-b-2 z-20 translate-y-0 shadow-2xl" : "bg-transparent border-b-0 -translate-y-20" )}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0 lg:py-2">
-        <div className="sm:h-16 h-12 relative flex flex-row items-center md:justify-between justify-start">
+        <div className="sm:h-14 h-10 px-0.5 relative flex flex-row items-center md:justify-between justify-start">
           <div className="block md:hidden mr-4 ">
             <div className="flex items-center">
               <button type="button" className="rounded-md text-neutral-300 hover:text-cyan-300 hover:ring-2 hover:ring-cyan-500 focus:text-cyan-300 focus:ring-2 focus:ring-cyan-500" onClick={(e) => handleOpen(e)}>
@@ -56,19 +56,17 @@ export default function NavBar(props) {
               </button>
             </div>
           </div>
-          <div className="">
-            <Link href="/#home" scroll={false}>
-              <a className="cursor-pointer md:pb-2 sm:pb-1 hover:text-cyan-200 hover:border-b-4 focus:text-cyan-200 focus:border-b-4 border-cyan-500" onClick={(e) => handleClick(e)}>
-                <span className="lg:text-5xl md:text-4xl sm:text-4xl text-2xl font-logo" data-anchor="home">	&gt;_&nbsp;Adam_Isaak&nbsp;-dev</span>
-              </a>
-            </Link>
-          </div>
+          <Link href="/#home" scroll={false}>
+            <a className="cursor-pointer md:pb-2 pb-1 hover:text-cyan-200 hover:border-b-4 focus:text-cyan-200 focus:border-b-4 border-cyan-500" onClick={(e) => handleClick(e)}>
+              <span className="xl:text-4xl sm:text-3xl text-2xl font-logo" data-anchor="home">	&gt;_&nbsp;Adam_Isaak&nbsp;-dev</span>
+            </a>
+          </Link>
           <div className="hidden md:block">
             <ul className="relative flex items-center justify-between lg:space-x-8 space-x-4">
               {navigation.map((item) => (
                 <li className={`${navItemWidth} flex justify-center`} key={item.name}>
                   <Link href={item.href} scroll={!item.anchor}>
-                    <a className="cursor-pointer lg:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 focus:font-bold focus:text-cyan-100 focus:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleClick(e)}>
+                    <a className="cursor-pointer xl:text-xl text-base hover:font-bold hover:text-cyan-100 hover:border-b-4 focus:font-bold focus:text-cyan-100 focus:border-b-4 border-cyan-500" data-anchor={item.anchor} onClick={(e) => handleClick(e)}>
                       <span className="sm:pr-2 pr-1 font-bold">/</span>{item.name}
                     </a>
                   </Link>

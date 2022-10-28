@@ -67,7 +67,7 @@ export default function About() {
                 <li key={section.id}>
                   <div className={"md:my-3 mx-3 " + (section.selected ? "text-cyan-200 contrast-more:text-cyan-300" : "text-neutral-400 contrast-more:text-neutral-200")}>
                     <button className="flex transition-transform ease-in-out duration-150 hover:scale-125 focus:scale-125" onClick={() => updateSelection(section.id)} title={section.title}>
-                      <span className="" aria-label={section.title}>{section.icons.key}</span><span className="ml-3 lg:block hidden" aria-hidden="true">{section.title}</span>
+                      <span aria-label={section.title}>{section.icons.key}</span><span className="ml-3 lg:block hidden" aria-hidden="true">{section.title}</span>
                     </button>
                   </div>
                 </li>
@@ -93,11 +93,9 @@ export function Section(props) {
       <div className={"transition-opacity ease-in-out duration-300 " + (props.selected ? "opacity-100 " : "opacity-0")}>
         <div className="relative rounded  outline outline-offset-4 outline-4 bg-slate-900 outline-cyan-700 text-neutral-300">
           <div className="p-5 space-y-4">
-            <div>
-              <h3 className="text-cyan-100 flex  items-center text-xl">
-                <span className="mr-3 text-cyan-300" aria-hidden="true">{props.icons.header}</span>{props.title}
-              </h3>
-            </div>
+            <h3 className="text-cyan-100 flex  items-center text-xl">
+              <span className="mr-3 text-cyan-300" aria-hidden="true">{props.icons.header}</span>{props.title}
+            </h3>
             <p>{props.text}</p>
           </div>
         </div>
