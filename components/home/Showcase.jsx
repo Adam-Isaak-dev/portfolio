@@ -81,14 +81,14 @@ export default function Showcase() {
             A showcase of what languages, frameworks, and tools I've used thus far...
           </p>
         </div>
-        <div className="h-20 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-full flex items-center overflow-hidden bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4 motion-reduce:hidden">
+        <div className="h-20 xl:max-w-6xl lg:max-w-4xl md:max-w-2xl max-w-full flex items-center motion-safe:overflow-hidden motion-reduce:overflow-scroll bg-slate-900 md:rounded outline outline-cyan-900 outline-offset-4 outline-4">
           <div className="flex">
-            <div className="flex animate-scroll-loop-left">
+            <div className="flex motion-safe:animate-scroll-loop-left">
               {logos.map((logo) => (
                 <Logo {...logo} key={"logo-" + logo.text + "-1"}/>
               ))}
             </div>
-            <div className="flex animate-scroll-loop-left">
+            <div className="flex animate-scroll-loop-left motion-reduce:hidden">
               {logos.map((logo) => (
                 <Logo {...logo} key={"logo-" + logo.text + "-2"}/>
               ))}
