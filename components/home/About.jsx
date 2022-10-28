@@ -28,7 +28,7 @@ const sectionData = [
     text: "Outside of programing you can usually find me preparing to DM my next Dungeons and Dragons session, or trying out the latest metriodvania to come out on Steam.",
     icons: {
       key: <IconBooks aria-label="Interests"/>,
-      header: <IconBook aria-label="true"/>,
+      header: <IconBook aria-hidden="true"/>,
     },
     selected: false,
   },
@@ -75,7 +75,7 @@ export default function About() {
             </ul>
           </div>
           <div className="lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-sm m-auto">
-            <div className="xl:px-96 xl:py-24 lg:px-80 lg:py-28 md:px-72 md:py-32 sm:px-64 sm:py-36 px-36 py-52 relative">
+            <div className="xl:px-96 xl:py-24 lg:px-80 lg:py-28 md:px-72 md:py-32 sm:px-64 sm:py-36 px-32 py-52 relative">
               {sections.map((section) => (
                 <Section {...section} key={section.id}/>
               ))}

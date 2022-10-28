@@ -14,6 +14,7 @@ module.exports = {
         '88': '22rem',
         '128': '32rem',
         '144': '36rem',
+        '176': '44rem',
       },
       animation: {
         'scroll-loop-left': 'loop-left 30s linear infinite',

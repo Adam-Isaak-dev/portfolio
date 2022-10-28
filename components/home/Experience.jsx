@@ -3,7 +3,7 @@ import { IconMapPin, IconExternalLink, IconCaretDown, IconCaretUp } from '@table
 
 const jobs = [
   {
-    title: "Lead Developer - Rally\xa0the\xa0Locals",
+    title: "Lead Developer -\xa0Rally\xa0the\xa0Locals",
     start: "December\xa02021",
     end: "April\xa02022",
     location: "Remote (Winnipeg, Canada)",
@@ -13,7 +13,7 @@ const jobs = [
     link: "rallythelocals.com",
   },
   {
-    title: "Developer - Rally\xa0the\xa0Locals",
+    title: "Developer -\xa0Rally\xa0the\xa0Locals",
     start: "July\xa02021",
     end: "November\xa02021",
     location: "Remote (Winnipeg, Canada)",
@@ -58,8 +58,8 @@ export default function Experience() {
           <div  className="px-5 mb-5">
             <h3 className="text-2xl w-full text-neutral-400 contrast-more:text-neutral-200 text-center">Professional Experience</h3>
           </div>
-          <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-md mx-auto">
-            <div className="min-w-full space-y-5">
+          <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-sm mx-auto">
+            <div className="w-full space-y-5">
               {jobs.map((job) => (
                 <Entry {...job} key={"job-" + job.title}/>
               ))}
@@ -68,8 +68,8 @@ export default function Experience() {
           <div  className="px-5 mb-5 mt-12">
             <h3 className="text-2xl w-full text-neutral-400 contrast-more:text-neutral-200 text-center">Education</h3>
           </div>
-          <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-md mx-auto">
-            <div className="min-w-full space-y-5">
+          <div className="flex flex-col justify-center items-center lg:max-w-3xl md:max-w-2xl sm:max-w-lg max-w-sm mx-auto">
+            <div className="w-full space-y-5">
               {education.map((entry) => (
                 <Entry {...entry} key={"entry-" + entry.title}/>
               ))}
@@ -91,15 +91,15 @@ export function Entry(props) {
 
   return (
     <div className="md:w-4xl rounded-xl mx-2">
-      <div className="rounded-xl lg:h-14 md:h-16 h-24 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={(e) => handleClick(e)}>
-        <span className="sm:text-xl text-lg font-bold">{props.title}</span>
-        <span className="sm:text-lg text-base font-semibold text-right">{props.start} - {props.end}</span>
+      <div className="rounded-xl lg:h-14 md:h-16 h-20 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={(e) => handleClick(e)}>
+        <span className="md:text-xl sm:text-lg text-base font-bold">{props.title}</span>
+        <span className="md:text-lg sm:text-base text-sm font-semibold text-right">{props.start} - {props.end}</span>
         <button className="absolute -bottom-3 left-1/2 rounded-full p-0.5 bg-cyan-600 transition-transform duration-150 ease-in-out hover:scale-125 focus:scale-125" title={"open " + props.title + " section"} >
           {open ? <IconCaretUp className="h-6 w-6 text-cyan-100" aria-hidden="true"/> : <IconCaretDown className="h-6 w-6 text-cyan-100" aria-hidden="true"/> }
         </button>
       </div>
       <div className="bg-slate-900 rounded-xl">
-        <div className={(open ? "opacity-100 max-h-144" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
+        <div className={(open ? "opacity-100 max-h-176" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
           <div className="space-y-5 p-5">
             <div className="flex space-x-3 items-center">
               <IconMapPin className="h-6 w-6 text-cyan-500" aria-label="map pin icon"/>

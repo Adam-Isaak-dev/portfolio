@@ -56,13 +56,13 @@ export function Project(props) {
   }   
 
   return (
-    <div className="md:h-88 md:w-80 sm:h-80 sm:w-72 h-80 w-64 rounded ring-4 ring-neutral-700 bg-neutral-800 p-5 m-5 flex flex-col items-start justify-between transition duration-150 ease-in-out hover:-translate-y-3 focus:-translate-y-3">
+    <div className="md:h-88 md:w-72 h-84 w-64 rounded ring-4 ring-neutral-700 bg-neutral-800 p-5 m-5 flex flex-col items-start justify-between transition duration-150 ease-in-out hover:-translate-y-3 focus:-translate-y-3">
       <div className="container">
         <h3 className="text-white md:text-xl text-lg font-semibold mb-4">{props.name}</h3>
         <p className="text-neutral-200 md:text-lg text-base">{props.description}</p>
-        <ul className="flex flex-wrap justify-start text-gray-400 contrast-more:text-cyan-100 mt-2">
+        <ul className="flex flex-wrap justify-start text-gray-400 contrast-more:text-cyan-100 mt-3">
           {props.tags.map((tag) => (
-            <li className="mr-1 mb-1 px-2 rounded-full bg-slate-900" key={"tag-" + tag}>{tag}</li>
+            <li className="mr-1 mb-1 px-2 rounded-full bg-slate-900 md:text-base text-sm" key={"tag-" + tag}>{tag}</li>
           ))}
         </ul>
       </div>

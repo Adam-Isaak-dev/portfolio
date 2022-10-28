@@ -48,7 +48,7 @@ export default function NavBar(props) {
     <nav className={"text-white border-cyan-800 border-solid transition-transform duration-500 ease-in-out " + (stuck ? "sticky top-0 bg-gradient-to-r from-gray-900 to-cyan-900 border-b-2 z-20 translate-y-0 shadow-2xl" : "bg-transparent border-b-0 -translate-y-20" )}>
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-0 lg:py-2">
         <div className="sm:h-14 h-12 px-0.5 relative flex flex-row items-center md:justify-between justify-start">
-          <div className="block md:hidden mr-4 ">
+          <div className="block md:hidden mr-3">
             <div className="flex items-center">
               <button type="button" className="rounded-md text-neutral-300 hover:text-cyan-300 hover:ring-2 hover:ring-cyan-500 focus:text-cyan-300 focus:ring-2 focus:ring-cyan-500" onClick={(e) => handleOpen(e)}>
                 <span className="sr-only">Open menu</span>

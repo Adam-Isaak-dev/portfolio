@@ -10,7 +10,7 @@ export default function Contact(props) {
         </div>
         <div className="container flex flex-col justify-center md:items-end items-center space-y-5 py-6 px-4">
           {props.accounts.map((account) => (
-            <a className={"sm:w-96 w-72 text-center flex  items-center justify-around rounded-md border border-transparent px-8 py-3 text-base font-medium md:py-4 md:px-10 md:text-lg " + account.colors} href={account.url} key={account.name}>
+            <a className={"sm:w-96 w-64 text-center flex  items-center justify-around rounded-md border border-transparent px-8 py-3 text-base font-medium md:py-4 md:px-10 md:text-lg " + account.colors} href={account.url} key={account.name}>
               <span className="w-6">{account.icon}</span>
               <span className="w-40">{account.name}</span>
             </a>
