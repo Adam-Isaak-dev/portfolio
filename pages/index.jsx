@@ -16,7 +16,7 @@ const accounts = [
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/adam-isaak-dev/",
     icon: <IconBrandLinkedin className="h-6 w-6" aria-label="LinkedIn icon"/>,
-    colors: "text-white bg-sky-600 hover:bg-sky-400 focus:bg-sky-400"
+    colors: "text-white bg-sky-700 hover:bg-sky-500 focus:bg-sky-500"
   },
   {
     name: "E-Mail",

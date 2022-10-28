@@ -5,9 +5,9 @@ const sectionData = [
   {
     id: "about-summary",
     title: "Summary",
-    text: "I love figuring out how things work, looking at all the individual parts and seeing how it's all put back together. I take this style of understanding and use it where I can. Whether it&apos;s keeping things nice and organized, or figuring out the source of a problem. In other parts I focus in on the details and strive to keep things clear and accurate, for readable code and efficient communication",
+    text: "I love figuring out how things work, looking at all the individual parts and seeing how it's all put back together. I take this style of understanding and use it where I can. Whether it\'s keeping things nice and organized, or figuring out the source of a problem. In other parts I focus in on the details and strive to keep things clear and accurate, for readable code and efficient communication",
     icons: {
-      key: <IconBracketsContain aria-hidden="true" />,
+      key: <IconBracketsContain aria-label="Summary" />,
       header: <IconBracketsContainStart aria-hidden="true"/>,
     },
     selected: true,
@@ -15,9 +15,9 @@ const sectionData = [
   {
     id: "about-skills",
     title: "Skills",
-    text: "I enjoy learning new languages and frameworks. My approach to adapting quickly is to focus on using the broad concepts and principles, to guide my work rather than syntax. Starting with C++ I&apos;ve learned: C#, Javascript, PHP, .Net, React, Laravel, SQL server, MySQL, and more.",
+    text: "I enjoy learning new languages and frameworks. My approach to adapting quickly is to focus on using the broad concepts and principles, to guide my work rather than syntax. Starting with C++ I\'ve learned: C#, Javascript, PHP, .Net, React, Laravel, SQL server, MySQL, and more.",
     icons: {
-      key: <IconCodeCircle aria-hidden="true"/>,
+      key: <IconCodeCircle aria-label="Skills"/>,
       header: <IconMessage2Code aria-hidden="true"/>,
     },
     selected: false,
@@ -27,8 +27,8 @@ const sectionData = [
     title: "Interests",
     text: "Outside of programing you can usually find me preparing to DM my next Dungeons and Dragons session, or trying out the latest metriodvania to come out on Steam.",
     icons: {
-      key: <IconBooks aria-hidden="true"/>,
-      header: <IconBook aria-hidden="true"/>,
+      key: <IconBooks aria-label="Interests"/>,
+      header: <IconBook aria-label="true"/>,
     },
     selected: false,
   },
@@ -67,15 +67,15 @@ export default function About() {
                 <li key={section.id}>
                   <div className={"md:my-3 mx-3 " + (section.selected ? "text-cyan-200 contrast-more:text-cyan-300" : "text-neutral-400 contrast-more:text-neutral-200")}>
                     <button className="flex transition-transform ease-in-out duration-150 hover:scale-125 focus:scale-125" onClick={() => updateSelection(section.id)} title={section.title}>
-                      <span aria-label={section.title}>{section.icons.key}</span><span className="ml-3 lg:block hidden" aria-hidden="true">{section.title}</span>
+                      <span>{section.icons.key}</span><span className="ml-3 lg:block hidden" aria-hidden="true">{section.title}</span>
                     </button>
                   </div>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="lg:max-w-2xl md:max-w-xl max-w-sm m-auto">
-            <div className="xl:px-96 lg:px-80 lg:py-32 md:px-72 md:py-36 sm:px-44 sm:py-48 px-36 py-60 relative">
+          <div className="lg:max-w-2xl md:max-w-xl sm:max-w-lg max-w-sm m-auto">
+            <div className="xl:px-96 xl:py-24 lg:px-80 lg:py-28 md:px-72 md:py-32 sm:px-64 sm:py-36 px-36 py-52 relative">
               {sections.map((section) => (
                 <Section {...section} key={section.id}/>
               ))}
@@ -89,9 +89,9 @@ export default function About() {
 
 export function Section(props) {
   return (
-    <div className="absolute inset-5">
+    <div className="absolute inset-0 w-full">
       <div className={"transition-opacity ease-in-out duration-300 " + (props.selected ? "opacity-100 " : "opacity-0")}>
-        <div className="relative rounded  outline outline-offset-4 outline-4 bg-slate-900 outline-cyan-700 text-neutral-300">
+        <div className="relative rounded-lg border-4 border-solid bg-slate-900 border-cyan-700 text-neutral-300">
           <div className="p-5 space-y-4">
             <h3 className="text-cyan-100 flex  items-center text-xl">
               <span className="mr-3 text-cyan-300" aria-hidden="true">{props.icons.header}</span>{props.title}

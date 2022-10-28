@@ -3,71 +3,71 @@ import { Html5PlainIcon, Css3PlainIcon, BootstrapPlainIcon, TailwindcssPlainIcon
 const logos = [
   {
     text: "HTML 5",
-    icon: <Html5PlainIcon size="3rem" aria-hidden="true"/>
+    icon: <Html5PlainIcon size="3rem" aria-label="HTML 5 logo"/>
   },
   {
     text: "CSS 3",
-    icon: <Css3PlainIcon size="3rem" aria-hidden="true"/>
+    icon: <Css3PlainIcon size="3rem" aria-label="CSS 3 logo"/>
   },
   {
     text: "Javascript",
-    icon: <JavascriptPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <JavascriptPlainIcon size="3rem" aria-label="Javascript logo"/>
   },
   {
     text: "Bootstrap",
-    icon: <BootstrapPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <BootstrapPlainIcon size="3rem" aria-label="Bootstrap Logo"/>
   },
   {
     text: "Tailwind  CSS",
-    icon: <TailwindcssPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <TailwindcssPlainIcon size="3rem" aria-label="Tailwind CSS logo"/>
   },
   {
     text: "React",
-    icon: <ReactOriginalIcon size="3rem" aria-hidden="true"/>
+    icon: <ReactOriginalIcon size="3rem" aria-label="React logo"/>
   },
   {
     text: "Material UI",
-    icon: <MaterialuiPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <MaterialuiPlainIcon size="3rem" aria-label="Material UI logo"/>
   },
   {
     text: "Next.js",
-    icon: <NextjsOriginalIcon size="3rem" aria-hidden="true"/>
+    icon: <NextjsOriginalIcon size="3rem" aria-label="Next.js logo"/>
   },
   {
     text: "C++",
-    icon: <CplusplusPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <CplusplusPlainIcon size="3rem" aria-label="C plus plus logo"/>
   },
   {
     text: "C#",
-    icon: <CsharpPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <CsharpPlainIcon size="3rem" aria-label="C sharp logo"/>
   },
   {
     text: ".Net",
-    icon: <DotNetPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <DotNetPlainIcon size="3rem" aria-label="dot net logo"/>
   },
   {
     text: "SQL Server",
-    icon: <MicrosoftsqlserverPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <MicrosoftsqlserverPlainIcon size="3rem" aria-label="SQL server logo"/>
   },
   {
     text: "PHP",
-    icon: <PhpPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <PhpPlainIcon size="3rem" aria-label="PHP logo"/>
   },
   {
     text: "Laravel",
-    icon: <LaravelPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <LaravelPlainIcon size="3rem" aria-label="Laravel logo"/>
   },
   {
     text: "MySQL",
-    icon: <MysqlPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <MysqlPlainIcon size="3rem" aria-label="MySQL logo"/>
   },
   {
     text: "Git",
-    icon: <GitPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <GitPlainIcon size="3rem" aria-label="git logo"/>
   },
   {
     text: "Bash",
-    icon: <BashPlainIcon size="3rem" aria-hidden="true"/>
+    icon: <BashPlainIcon size="3rem" aria-label="bash logo"/>
   },
 ];
 
@@ -102,7 +102,7 @@ export default function Showcase() {
 
 export function Logo(props) {
   return (
-    <div className="mx-3" title={props.text} aria-label={props.text}>
+    <div className="mx-3" title={props.text}>
       {props.icon}
     </div>
   );

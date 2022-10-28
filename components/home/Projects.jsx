@@ -32,7 +32,7 @@ export default function Projects(props) {
       <div className="mx-auto max-w-7xl lg:py-30 md:py-20 sm:py-15 py-10">
         <div className="text-center mb-10">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl">My Work</h2>
-            <p className="mt-3 text-xl text-neutral-400 contrast-more:text-neutral-200">
+            <p className="mt-3 px-5 text-xl text-neutral-400 contrast-more:text-neutral-200">
               A showcase of some of my favorite work
             </p>
         </div>
@@ -56,11 +56,11 @@ export function Project(props) {
   }   
 
   return (
-    <div className="md:h-96 md:w-80 h-96 w-64 outline outline-4 outline-neutral-700 bg-neutral-800 p-5 m-5 flex flex-col items-start justify-between transition duration-150 ease-in-out hover:-translate-y-3 focus:-translate-y-3">
+    <div className="md:h-96 md:w-80 sm:h-88 sm:w-72 h-96 w-64 outline outline-4 outline-neutral-700 bg-neutral-800 p-5 m-5 flex flex-col items-start justify-between transition duration-150 ease-in-out hover:-translate-y-3 focus:-translate-y-3">
       <div className="pb-3">
         <h3 className="text-white md:text-xl text-lg font-semibold mb-4">{props.name}</h3>
         <p className="text-neutral-200 md:text-lg text-base">{props.description}</p>
-        <ul className="flex flex-wrap justify-start text-gray-400 contrast-more:text-cyan-100 mt-5">
+        <ul className="flex flex-wrap justify-start text-gray-400 contrast-more:text-cyan-100 mt-2">
           {props.tags.map((tag) => (
             <li className="mr-3 mb-2" key={"tag-" + tag}>{tag}</li>
           ))}

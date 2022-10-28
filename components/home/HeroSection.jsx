@@ -28,7 +28,7 @@ export default function HeroSection(props) {
               <div className="rounded-md shadow">
                 <Link href="/#portfolio" scroll={false}>
                   <a onClick={(e) => handleClick(e)}>
-                    <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-600 px-8 py-3 text-base font-medium text-white hover:bg-cyan-700 focus:bg-cyan-700 md:py-4 md:px-10 md:text-lg" data-anchor="portfolio">Projects</button>
+                    <button className="flex w-full items-center justify-center rounded-md border border-transparent bg-cyan-700 px-8 py-3 text-base font-medium text-white hover:bg-cyan-800 focus:bg-cyan-800 md:py-4 md:px-10 md:text-lg" data-anchor="portfolio">Projects</button>
                   </a>
                 </Link>
               </div>

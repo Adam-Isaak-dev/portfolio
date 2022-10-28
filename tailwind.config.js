@@ -7,10 +7,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        logo: ['Share\\Tech\\Mono','monospace']
+        logo: ['Share\-Tech\-Mono','monospace']
       },
       spacing: {
+        '88': '22rem',
         '128': '32rem',
+        '144': '36rem',
       },
       animation: {
         'scroll-loop-left': 'loop-left 30s linear infinite',

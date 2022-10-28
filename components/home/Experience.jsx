@@ -91,18 +91,18 @@ export function Entry(props) {
 
   return (
     <div className="md:w-4xl rounded-xl mx-2">
-      <div className="rounded-xl lg:h-12 md:h-14 h-20 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={(e) => handleClick(e)}>
+      <div className="rounded-xl lg:h-14 md:h-16 h-24 sm:px-10 px-5  bg-cyan-400 relative flex items-center justify-between " onClick={(e) => handleClick(e)}>
         <span className="sm:text-xl text-lg font-bold">{props.title}</span>
         <span className="sm:text-lg text-base font-semibold text-right">{props.start} - {props.end}</span>
-        <button className="absolute -bottom-3 left-1/2 rounded-full p-0.5 bg-cyan-600 transition-transform duration-150 ease-in-out hover:scale-125 focus:scale-125" aria-hidden="true">
-          {open ? <IconCaretUp className="h-6 w-6 text-cyan-100"/> : <IconCaretDown className="h-6 w-6 text-cyan-100"/> }
+        <button className="absolute -bottom-3 left-1/2 rounded-full p-0.5 bg-cyan-600 transition-transform duration-150 ease-in-out hover:scale-125 focus:scale-125" title={"open " + props.title + " section"} >
+          {open ? <IconCaretUp className="h-6 w-6 text-cyan-100" aria-hidden="true"/> : <IconCaretDown className="h-6 w-6 text-cyan-100" aria-hidden="true"/> }
         </button>
       </div>
       <div className="bg-slate-900 rounded-xl">
-        <div className={(open ? "opacity-100 max-h-128" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
+        <div className={(open ? "opacity-100 max-h-144" : "opacity-0 max-h-0") + " transition-all ease-in-out duration-300 overflow-hidden"} id={"background-" + props.title}>
           <div className="space-y-5 p-5">
             <div className="flex space-x-3 items-center">
-              <IconMapPin className="h-6 w-6 text-cyan-500"/>
+              <IconMapPin className="h-6 w-6 text-cyan-500" aria-label="map pin icon"/>
               <span className="text-neutral-400">{props.location}</span>
             </div>
             <p className="text-lg text-neutral-200">
@@ -115,7 +115,7 @@ export function Entry(props) {
             </ul>
             {!props.link ? " ": 
               <a className="flex space-x-3 justify-end items-center" href={props.url} target="_blank" rel="noreferrer">
-                <span className="text-neutral-400">{props.link}</span><IconExternalLink className="h-6 w-6 text-cyan-500"/>
+                <span className="text-neutral-400">{props.link}</span><IconExternalLink className="h-6 w-6 text-cyan-500" aria-label="external link icon"/>
               </a>
             }
           </div>
